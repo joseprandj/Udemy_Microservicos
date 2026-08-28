@@ -1,10 +1,10 @@
-package io.github.joseprandj.mscartao;
+package io.github.joseprandj.mscartoes;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MsCartaoApplicationTests {
+class MsCartoesApplicationTests {
 
     @Test
     void contextLoads() {

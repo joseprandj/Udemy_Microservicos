@@ -1,13 +1,13 @@
-package io.github.joseprandj.mscartao;
+package io.github.joseprandj.mscartoes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MsCartaoApplication {
+public class MsCartoesApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MsCartaoApplication.class, args);
+        SpringApplication.run(MsCartoesApplication.class, args);
     }
 
 }

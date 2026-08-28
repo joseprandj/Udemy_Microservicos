@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>io.github.joseprandj</groupId>
-    <artifactId>msCartao</artifactId>
+    <artifactId>msCartoes</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>msCartao</name>
-    <description>msCartao</description>
+    <name>msCartoes</name>
+    <description>msCartoes</description>
     <url/>
     <licenses>
         <license/>
