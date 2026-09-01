@@ -26,6 +26,15 @@ public class ClienteController {
         return "OK";
     }
 
+    @GetMapping(params = "cpf")
+    public ResponseEntity dadosCliente(@RequestParam("cpf") String cpf) {
+        Optional<Cliente> cliente = service.getByCPF(cpf);
+
+        if (cliente.isEmpty()) return ResponseEntity.notFound().build();
+
+        return ResponseEntity.ok(cliente);
+    }
+
     @PostMapping
     public ResponseEntity save(@RequestBody ClienteDTO clienteDTO) {
         Cliente cliente = clienteDTO.toModel();
@@ -40,12 +49,5 @@ public class ClienteController {
         return ResponseEntity.created(headerLocation).build();
     }
 
-    @GetMapping(params = "cpf")
-    public ResponseEntity dadosCliente(@RequestParam("cpf") String cpf) {
-        Optional<Cliente> cliente = service.getByCPF(cpf);
 
-        if (cliente.isEmpty()) return ResponseEntity.notFound().build();
-
-        return ResponseEntity.ok(cliente);
-    }
 }

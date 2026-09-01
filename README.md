@@ -44,6 +44,10 @@ Microserviço responsável por realizar o cadastro e consulta de clientes
 	
 # msCartoes (Eureka Client)
 Microserviço responsável por realizar o processamento de criação e consulta de cartões
+
+# msAvaliadorCredito (Eureka Client)
+Microserviço responsável por realizar o processamento de avaliação de crédito e solicitação de cartão
+	
 	
 ---
 
@@ -57,8 +61,8 @@ Microserviço responsável por realizar o processamento de criação e consulta 
                             │
        ┌────────────────────┼────────────────────┐
        │                    │                    │
-   msClientes           msCartoes            x
-  :8081 :8082          :8091 :8092             :8101
+   msClientes           msCartoes            msAvaliadorCredito
+  :8081 :8082          :8091 :8092             :8101 :8102
        ▲                    ▲                    ▲
        │                    │                    │
        └────────────────────┼────────────────────┘
