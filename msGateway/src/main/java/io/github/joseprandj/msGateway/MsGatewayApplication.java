@@ -21,8 +21,9 @@ public class MsGatewayApplication {
 	public RouteLocator routes(RouteLocatorBuilder builder) {
 		return builder
 			.routes()
-				.route(r -> r.path("/clientes/**").uri("lb://msClients"))
+				.route(r -> r.path("/clientes/**").uri("lb://msClientes"))
 				.route(r -> r.path("/cartoes/**").uri("lb://msCartoes"))
+				.route(r -> r.path("/avaliacoes-credito/**").uri("lb://msAvaliadorCredito"))
 			.build();
 	};
 }

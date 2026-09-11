@@ -1,6 +1,6 @@
 spring:
   application:
-    name: msClients
+    name: msClientes
 
 server:
   port: 0 # Gera porta randomica
