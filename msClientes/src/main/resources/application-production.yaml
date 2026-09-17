@@ -1,11 +1,6 @@
 spring:
   application:
-    name: msAvaliadorCredito
-  rabbitmq:
-    host: rabbitmq-host
-    port: 5672
-    username: guest
-    password: guest
+    name: msClientes
 
 server:
   port: 0 # Gera porta randomica
@@ -13,13 +8,9 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://ms-eureka-user:123456@localhost:8761/eureka
+      defaultZone: http://ms-eureka-user:123456@${EUREKA_SERVER}:8761/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value} }
-
-mq:
-  queues:
-    emissao-cartoes: emissao-cartoes
 
 management:
   endpoints:

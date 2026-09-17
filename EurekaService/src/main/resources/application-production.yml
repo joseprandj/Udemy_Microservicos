@@ -4,9 +4,9 @@ spring:
     security:
         basic:
             enabled: true
-        user: # Ideal é utilizar em variavel de ambiente, mas para aprendizado deixei fixo
-            name: ms-eureka-user
-            password: 123456
+        user:
+            name: ${EUREKA_SERVER_USER}
+            password: ${EUREKA_SERVER_PASS}
 
 server:
     port: 8761

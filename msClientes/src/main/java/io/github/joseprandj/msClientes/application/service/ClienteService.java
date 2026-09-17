@@ -2,10 +2,10 @@ package io.github.joseprandj.msClientes.application.service;
 
 import io.github.joseprandj.msClientes.domain.Cliente;
 import io.github.joseprandj.msClientes.infra.repository.ClienteRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.util.Optional;
 
 @Service

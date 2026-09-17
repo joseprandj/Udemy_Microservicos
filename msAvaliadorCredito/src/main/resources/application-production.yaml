@@ -2,7 +2,7 @@ spring:
   application:
     name: msAvaliadorCredito
   rabbitmq:
-    host: rabbitmq-host
+    host: ${RABBITMQ_SERVER}
     port: 5672
     username: guest
     password: guest
@@ -13,7 +13,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://ms-eureka-user:123456@localhost:8761/eureka
+      defaultZone: http://ms-eureka-user:123456@${EUREKA_SERVER}:8761/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value} }
 

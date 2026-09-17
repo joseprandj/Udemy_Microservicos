@@ -1,10 +1,9 @@
 package io.github.joseprandj.msCartoes.application.domain;
 
-import com.sun.istack.NotNull;
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
@@ -16,7 +15,7 @@ public class ClienteCartao {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull
+    @jakarta.validation.constraints.NotNull
     private String cpf;
 
     @ManyToOne

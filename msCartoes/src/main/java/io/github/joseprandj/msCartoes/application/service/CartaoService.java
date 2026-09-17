@@ -2,10 +2,10 @@ package io.github.joseprandj.msCartoes.application.service;
 
 import io.github.joseprandj.msCartoes.application.domain.Cartao;
 import io.github.joseprandj.msCartoes.application.infra.repository.CartaoRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.math.BigDecimal;
 import java.util.List;
 

@@ -1,9 +1,8 @@
 package io.github.joseprandj.msClientes.domain;
 
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
 
 @Entity
 @Data
